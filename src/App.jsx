@@ -10,6 +10,24 @@ const App = () => {
       <section className="container">
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
+
+        {people.length > 0 ? (
+          <button
+            type="button"
+            className="btn btn-block"
+            onClick={() => setPeople([])}
+          >
+            Clear All
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="btn btn-block"
+            onClick={() => setPeople(data)}
+          >
+            Reset
+          </button>
+        )}
       </section>
     </main>
   )
