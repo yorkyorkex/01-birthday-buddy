@@ -10,7 +10,7 @@ const Person = ({ id, name, age, image }) => {
         <p>{age} years</p>
       </div>
       <button
-        style={{ height: '30px' }}
+        style={{ marginTop: '10px' }}
         type="button"
         className="btn  btn-block"
         onClick={() => setPeople(people.filter((person) => person.id !== id))}
